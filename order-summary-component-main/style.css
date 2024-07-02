@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+    padding: 0rem 1rem;
+}
+/* background */
+.wave {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top:0;
+    width: 100%;
+}
+
+/* everything inside the box */
+.parent-container {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10rem auto;
+    width: 26rem;
+    background-color: rgb(236, 245, 252);
+}
+
+/* girl svg */
+.img svg {
+    display: block;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/* heading to buttons section */
+.child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* summary section */
+.summary {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.summary p {
+    padding: 1rem 3rem;
+    font-weight: 500;
+    color:hsl(224, 23%, 55%);
+}
+
+.summary h2 {
+    font-weight: 900;
+}
+
+/* price container */
+.plan {
+    background-color: hsla(225, 100%, 94%, 0.418);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin: 5px auto;
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.price p {
+    font-weight: 900;
+
+}
+
+.slash {
+    color: hsl(224, 23%, 55%);
+}
+
+.change {
+    flex: 1;
+    text-align: right;
+    text-decoration: underline;
+    color: hsl(253, 97%, 42%);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* buttons section */
+.payment {
+    width: 100%; 
+    margin: 2rem auto; 
+    padding: 1rem 3rem;
+    background-color: rgb(79, 9, 245);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.cancel {
+    border: none;
+    background: none;
+    color: hsl(228, 2%, 42%);
+    font-weight: 700;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 500px) {
+    body {
+        padding: 2rem;
+    }
+
+    .parent-container {
+        width: 100%;
+    }
+}
